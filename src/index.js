@@ -1,3 +1,9 @@
-// import foo from './modules/test';
+import chooseClub from './modules/chooseClub';
+import showPopup from './modules/showPopup';
+import arrowUp from './modules/arrowUp';
 
-// foo();
+chooseClub();
+
+showPopup();
+
+arrowUp();
