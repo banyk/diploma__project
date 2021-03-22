@@ -4,7 +4,9 @@
   "description": "diploma",
   "main": "index.js",
   "scripts": {
-    "build": "webpack"
+    "build": "webpack --mode production",
+    "dev": "webpack --mode development",
+    "watch": "webpack --mode development --watch"
   },
   "keywords": [
     "diploma"
