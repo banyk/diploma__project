@@ -17,9 +17,10 @@ const showPopup = () => {
 
 		const closePopup = () => {
 			const close = target.closest('.close-form'),
+				closeBtn = target.closest('.close-btn'),
 				formWrapper = target.closest('.form-wrapper');
 
-			if (!formWrapper || close) {
+			if (!formWrapper || close || closeBtn) {
 				target.closest('.popup').style.display = 'none';
 			}
 		};
