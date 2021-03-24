@@ -4,6 +4,7 @@ import arrowUp from './modules/arrowUp';
 import toggleMenu from './modules/toggleMenu';
 import sendFormOnPage from './modules/sendFormOnPage';
 import maskPhone from './modules/maskPhone';
+import validateInputs from './modules/validateInputs';
 
 chooseClub();
 
@@ -16,3 +17,5 @@ toggleMenu();
 sendFormOnPage();
 
 maskPhone('input[type="tel"]');
+
+validateInputs();

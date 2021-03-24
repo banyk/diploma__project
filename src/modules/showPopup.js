@@ -20,6 +20,7 @@ const showPopup = () => {
 				closeBtn = target.closest('.close-btn'),
 				formWrapper = target.closest('.form-wrapper');
 
+
 			if (!formWrapper || close || closeBtn) {
 				target.closest('.popup').style.display = 'none';
 			}
