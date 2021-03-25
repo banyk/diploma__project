@@ -9,6 +9,7 @@ const validateInputs = () => {
 		});
 
 	});
+
 };
 
 export default validateInputs;
