@@ -1324,23 +1324,20 @@ nav.popup-menu .close-menu-btn img {
   padding: 5px 5px 5px 18px;
   margin-right: 5px;
 }
-#services{
-}
-#services .wrapper {
-	overflow: hidden;
-	position: relative;
-}
 .services-slider {
+	position: relative;
   display: flex;
   margin: 0 auto;
   padding-left: 15px;
   padding-right: 15px;
-
+	transition: transform 0.5s;
+	will-change: transform;
 }
 .services-slider .slide {
-	flex: 0 0 25%;
+	flex: 0 0 20%;
   text-align: center;
-	margin: 0 auto;
+  margin-right: 6px;
+  margin-left: 6px;
   width: 210px;
 }
 .services-slider .slide img {
@@ -1362,15 +1359,14 @@ nav.popup-menu .close-menu-btn img {
   max-width: 200px;
   margin: 0 auto;
 }
-.wrapper .slider-arrow {
+.services-slider .slider-arrow {
   position: absolute;
-  top: 50%;
-	transform: translateY(-50%);
+  top: 75px;
   margin-top: -18px;
   z-index: 100;
   cursor: pointer;
 }
-.wrapper .slider-arrow span {
+.services-slider .slider-arrow span {
   display: block;
   width: 36px;
   height: 37px;
@@ -1379,10 +1375,10 @@ nav.popup-menu .close-menu-btn img {
   text-align: center;
   padding-top: 11px;
 }
-.wrapper .slider-arrow.prev {
+.services-slider .slider-arrow.prev {
   left: 2px;
 }
-.wrapper .slider-arrow.next {
+.services-slider .slider-arrow.next {
   right: 2px;
 }
 #gallery {

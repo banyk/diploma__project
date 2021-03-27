@@ -7,6 +7,7 @@ import maskPhone from './modules/maskPhone';
 import validateInputs from './modules/validateInputs';
 import calc from './modules/calc';
 import mainSlider from './modules/mainSlider';
+import Carousel from './modules/carousel';
 
 chooseClub();
 
@@ -25,3 +26,13 @@ validateInputs();
 calc();
 
 mainSlider();
+
+// Carousel();
+const carousel = new Carousel({
+	main: 'div#services>div.wrapper',
+	wrap: '.services-slider',
+	prev: '#carousel-prev',
+	next: '#carousel-next',
+});
+
+carousel.init();
