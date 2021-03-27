@@ -33,6 +33,22 @@ const toggleMenu = () => {
 			});
 		});
 	});
+
+	const topMenuToFixed = () => {
+
+		const topMenu = document.querySelector('.top-menu');
+		window.addEventListener('scroll', () => {
+			if (document.documentElement.clientWidth < 768) {
+				if (document.documentElement.scrollTop > topMenu.offsetTop) {
+					topMenu.classList.add('burger__fixed');
+				} else {
+					topMenu.classList.remove('burger__fixed');
+				}
+			} else {
+				topMenu.classList.remove('burger__fixed');
+			}
+		});
+	};
 };
 
 
